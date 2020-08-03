@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="flickity.css">
+    <title>kerala</title>
+</head>
+<body>
+   <nav>
+       <div>
+           <div class="navbar">
+               <div class="logo  justify-content-center">
+                   <img src="kerala-tourism-title.png" alt="">
+               </div>
+           </div>
+       </div>
+   </nav>
+
+   <header>
+       <div>
+           <div>
+                <div class="home">
+                   <section>
+                    <img class="slides" src="ph1.jpg" style="width:100%">
+                    <img class="slides" src="ph2.jpg" style="width:100%">
+                    <img class="slides" src="ph3.jpg" style="width:100%">
+                    <img class="slides" src="ph4.jpg" style="width:100%">
+                </section>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <div class="content">
+       <div>
+           <div class="tittle-1">
+               <h1>Expeience Kerala</h1>
+           </div>
+           <div>
+               <div class="">
+                <div class="carousel"
+                data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": true }'>
+                    <div class="carousel-cell">
+                        <div class="cont">
+                        <img class="cell-1" src="2-malabar.jpg" alt="">
+                        <h5 class="bottom">MALABAR</h5>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-cell">   
+                        <div class="cont">
+                        <img class="" src="3-Ayruveda.jpg" alt="">
+                        <h5 class="bottom">AYURVEDA</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">  
+                        <div class="cont">  
+                        <img class="" src="4christianity.jpg" alt="">
+                        <h5 class="bottom">CHRISTINITY</h5>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-cell"> 
+                        <div class="cont">   
+                        <img class="" src="5-yoga1.jpg" alt="">
+                        <h5 class="bottom">YOGA</h5>
+                
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="cont">
+                        <img class="" src="6-thalassery.jpg" alt="">
+                        <h5 class="bottom">THALASSERY</h5>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-cell">  
+                        <div class="cont">  
+                        <img class="" src="7-Judaism.jpg" alt="">
+                        <h5 class="bottom">JUDANISM</h5>
+                        
+                        </div>
+                    </div>    
+              </div>
+               </div>
+           </div>
+           <div class="submit-1">
+               <button type="submit" id="submit">find more experiences </button>
+           </div>
+       </div>
+   </div>
+
+   <div class="content-2">
+       <div class="">
+           <div class="tittle-2"> 
+               <h1>Top Destinations</h2>
+           </div>
+           <div class="images">
+               <div class="grid">
+                   <img src="Agasthyakoodam1.jpg" alt="">
+                   <img src="Alappuzha-Beach1.jpg" alt="">
+                   <img src="kappad-beach.jpg" alt="">
+                   <img src="Nadukanippara-Kollam1.jpg" alt="">
+                   <img src="nilambur-teak-plantation1.jpg" alt="">
+                   <img src="periyar2.jpg" alt="">
+                   <img src="silent-valley1.jpg" alt="">
+                   <img src="tipus-fort1.jpg" alt="">
+               </div>
+           </div>
+           <div class="submit-1">
+               <button type="submit" id="submit">find more experiences ></button>
+           </div>
+       </div>
+   </div>
+
+   <div class="content-3">
+        <div class="">
+            <div class="tittle-3">
+                <h1>Things to do in Kerala</h2>
+            </div>
+            <div class="">
+                <div class="grid-2">
+                    <img src="village-life-experience1.jpg" alt="">
+                    <img src="ethinic-cusine.jpg" alt="">
+                    <img src="bg3.jpg" alt="">
+                    <img src="houseboat11.jpg" alt="">
+                    <img src="ayurveda-768x432.jpg" alt="">
+                    <img src="kadalundi_bird-1024x576.jpg" alt="">
+                </div>
+            </div>
+            <div class="submit-1">
+                <button type="submit" id="submit">find more activities</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Slide Show: Change picture every three seconds -->
+<script type="text/javascript">
+    var index = 0;
+    change();
+
+    function change() {
+
+        //Collect all images with class 'slides'
+        var x = document.getElementsByClassName('slides');
+
+        //Set all the images display to 'none' (invisible)
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }
+
+        //Increment index variable
+        index++;
+
+        //Set index to 1 if it's greater than the amount of images
+        if(index > x.length) { 
+            index = 1; 
+        }
+
+        //set image display to 'block' (visible)
+        x[index - 1].style.display = "block";
+
+        //set loop to change image every 3000 milliseconds (3 seconds)
+        setTimeout(change, 3000);
+    }
+</script>
+
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+      <script src="jquery.slim.min.js"></script>
+      <script src="popper.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script src="flickity.pkgd.js"></script>
+      <script src="flickity.pkgd.min.js"></script>
+</body>
+</html>
